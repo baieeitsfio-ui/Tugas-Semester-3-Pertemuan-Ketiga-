@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak & Saran - Portofolio Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <h1 class="logo">Form Kontak</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Kembali ke Beranda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>Kirimkan Pesan atau Saran</h2>
+            <p>Silakan isi form di bawah ini untuk memberikan masukan terkait portofolio atau proyek web.</p>
+        </section>
+
+        <section class="card" style="max-width: 600px; margin: 0 auto;">
+           
+            <form action="#" method="POST">
+                
+                <div style="margin-bottom: 1.25rem;">
+                    <label for="nama" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required placeholder="Masukkan nama Anda" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                
+                <div style="margin-bottom: 1.25rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Alamat Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="nama@email.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                
+                <div style="margin-bottom: 1.25rem;">
+                    <label for="tanggal" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Tanggal Kunjungan:</label>
+                    <input type="date" id="tanggal" name="tanggal" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                
+                <div style="margin-bottom: 1.25rem;">
+                    <label for="rating" style="display: block; margin-bottom: 0.5rem; font-weight: 500;">Rating Portofolio (1 - 5):</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" value="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border-color); border-radius: 8px;">
+                </div>
+
+                
+                <div style="margin-bottom: 1.25rem; display: flex; align-items: center; gap: 0.5rem;">
+                    <input type="checkbox" id="persetujuan" name="persetujuan" required style="width: 18px; height: 18px;">
+                    <label for="persetujuan" style="font-size: 0.95rem;">Saya menyatakan data yang diisi sudah benar.</label>
+                </div>
+
+                <button type="submit" style="background-color: var(--primary-color); color: white; border: none; padding: 0.75rem 1.5rem; font-size: 1rem; font-weight: 600; border-radius: 8px; cursor: pointer; width: 100%;">Kirim Pesan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Teknik Informatika • Universitas Yudharta Pasuruan</p>
+    </footer>
+</body>
+</html>
